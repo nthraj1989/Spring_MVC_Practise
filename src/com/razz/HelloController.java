@@ -27,6 +27,7 @@ public class HelloController {
 	
 	@RequestMapping("/{stateName}/{username}")
 	//PathVariable using Map in the method argument
+	//instead of using more than one @pathvarible we can use @PathVariable with Map
 	public ModelAndView hiworld(@PathVariable Map<String,String> m )
 	{
 		String username=m.get("username");
